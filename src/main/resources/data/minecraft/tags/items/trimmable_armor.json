@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_silver:silver_helmet",
+    "better_silver:silver_chestplate",
+    "better_silver:silver_leggings",
+    "better_silver:silver_boots"
+  ]
+}

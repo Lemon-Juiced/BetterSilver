@@ -1,0 +1,22 @@
+{
+  "item.better_silver.raw_silver": "Raw Silver",
+
+  "item.better_silver.silver_sword": "Silver Sword",
+  "item.better_silver.silver_shovel": "Silver Shovel",
+  "item.better_silver.silver_pickaxe": "Silver Pickaxe",
+  "item.better_silver.silver_axe": "Silver Axe",
+  "item.better_silver.silver_hoe": "Silver Hoe",
+
+  "item.better_silver.silver_helmet": "Silver Helmet",
+  "item.better_silver.silver_chestplate": "Silver Chestplate",
+  "item.better_silver.silver_leggings": "Silver Leggings",
+  "item.better_silver.silver_boots": "Silver Boots",
+
+  "block.better_silver.silver_ore": "Silver Ore",
+  "block.better_silver.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.better_silver.raw_silver_block": "Block of Raw Silver",
+
+  "itemGroup.better_silver": "Better Silver",
+
+  "tooltip.better_silver.effective_undead": "Effective Against The Undead"
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "better_silver:silver_ore",
+    "better_silver:deepslate_silver_ore",
+    "better_silver:raw_silver_block"
+  ]
+}
