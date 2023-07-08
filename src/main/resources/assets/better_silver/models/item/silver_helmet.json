@@ -63,6 +63,7 @@
     }
   ],
   "textures": {
-    "layer0": "better_silver:item/silver_helmet"
+    "layer0": "better_silver:item/silver_helmet",
+    "layer1": "better_silver:item/silver_helmet_wings"
   }
 }

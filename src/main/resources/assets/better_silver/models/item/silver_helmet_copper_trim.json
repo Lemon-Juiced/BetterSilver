@@ -2,6 +2,7 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "better_silver:item/silver_helmet",
-    "layer1": "minecraft:trims/items/helmet_trim_copper"
+    "layer1": "minecraft:trims/items/helmet_trim_copper",
+    "layer2": "better_silver:item/silver_helmet_wings"
   }
 }
