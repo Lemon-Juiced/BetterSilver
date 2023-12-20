@@ -1,7 +1,7 @@
 package lemon_juice.better_silver.item.custom.tiers;
 
 import lemon_juice.better_silver.BetterSilver;
-import lemon_juice.better_silver.tags.ModTags;
+import lemon_juice.better_silver.tags.BetterSilverTags;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -14,7 +14,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.EnumMap;
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
+public enum BetterSilverArmorMaterials implements ArmorMaterial {
         /*
     LEATHER("leather", 5, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
@@ -80,7 +80,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 6);
         protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
     }), 12, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
-        return Ingredient.of(ModTags.Items.INGOTS_SILVER);
+        return Ingredient.of(BetterSilverTags.Items.INGOTS_SILVER);
     });
 
     public static final StringRepresentable.EnumCodec<net.minecraft.world.item.ArmorMaterials> CODEC = StringRepresentable.fromEnum(net.minecraft.world.item.ArmorMaterials::values);
@@ -100,7 +100,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    private ModArmorMaterials(String name, int durabilityMultiplier, EnumMap<ArmorItem.Type, Integer> protectionFunctionForType, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    private BetterSilverArmorMaterials(String name, int durabilityMultiplier, EnumMap<ArmorItem.Type, Integer> protectionFunctionForType, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionFunctionForType = protectionFunctionForType;

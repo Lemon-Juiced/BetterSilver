@@ -1,7 +1,7 @@
 package lemon_juice.better_silver.item.custom.tools;
 
 import com.mojang.datafixers.util.Either;
-import lemon_juice.better_silver.item.custom.tiers.ModTiers;
+import lemon_juice.better_silver.item.custom.tiers.BetterSilverTiers;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderOwner;
 import net.minecraft.network.chat.Component;
@@ -26,7 +26,7 @@ import static lemon_juice.better_silver.item.custom.tools.ToolUtil.isUndead;
 
 public class SilverShovelItem extends ShovelItem {
     public SilverShovelItem(Properties properties) {
-        super(ModTiers.SILVER_TIER, 1.5F, -3.0F, properties);
+        super(BetterSilverTiers.SILVER_TIER, 1.5F, -3.0F, properties);
     }
 
     @Override

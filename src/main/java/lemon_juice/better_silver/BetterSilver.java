@@ -1,40 +1,37 @@
 package lemon_juice.better_silver;
 
-import lemon_juice.better_silver.block.ModBlocks;
-import lemon_juice.better_silver.creativetab.ModCreativeTab;
-import lemon_juice.better_silver.item.ModItems;
-import lemon_juice.better_silver.tags.ModTags;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import lemon_juice.better_silver.block.BetterSilverBlocks;
+import lemon_juice.better_silver.creativetab.BetterSilverCreativeTab;
+import lemon_juice.better_silver.item.BetterSilverItems;
+import lemon_juice.better_silver.tags.BetterSilverTags;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 @Mod(BetterSilver.MOD_ID)
 public class BetterSilver {
     public static final String MOD_ID = "better_silver";
 
-    public BetterSilver() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // Register Items & Blocks
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
-
-        // Register Creative Tab
-        ModCreativeTab.register(modEventBus);
-        modEventBus.addListener(ModCreativeTab::registerTabs);
-
-        // Register Tags
-        ModTags.init();
-
+    public BetterSilver(IEventBus modEventBus) {
         modEventBus.addListener(this::commonSetup);
 
-        MinecraftForge.EVENT_BUS.register(this);
+        // Register Items & Blocks
+        BetterSilverItems.register(modEventBus);
+        BetterSilverBlocks.register(modEventBus);
+
+        // Register Creative Tab
+        BetterSilverCreativeTab.register(modEventBus);
+        modEventBus.addListener(BetterSilverCreativeTab::registerTabs);
+
+        // Register Tags
+        BetterSilverTags.init();
+
+        NeoForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {}
